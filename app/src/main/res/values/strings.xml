@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sarisEco</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="humedad">Humedad</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="automatizar">Automatizar</string>
+    <string name="vamos">Ingresar</string>
+    <string name="bienvenidos_a">Bienvenidos a:</string>
+    <string name="saris_eco">SARIS ECO</string>
+    <string name="acciones">Acciones:</string>
+    <string name="regar">Regar</string>
+    <string name="reporte">Reporte</string>
+    <string name="notificame">Notificame</string>
+</resources>

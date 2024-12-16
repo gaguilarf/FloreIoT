@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/temperatura"
+        android:id="@+id/temperatura_menu"
+        android:icon="@drawable/temperatura"
+        />
+    <item android:title="@string/humedad"
+        android:id="@+id/humedad_menu"
+        android:icon="@drawable/humedad"
+        />
+    <item android:title="@string/automatizar"
+        android:id="@+id/automatizar_menu"
+        android:icon="@drawable/bot"
+        />
+</menu>
