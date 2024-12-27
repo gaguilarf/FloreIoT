@@ -12,4 +12,9 @@
     <string name="regar">Regar</string>
     <string name="reporte">Reporte</string>
     <string name="notificame">Notificame</string>
+    <string name="regar_cuando_la_humedad_sea_menor_a">Regar cuando la humedad sea menor a:</string>
+    <string name="_50">50%</string>
+    <string name="regar_cuando_la_temperatura_caiga_por_debajo_de">Regar cuando la temperatura caiga por debajo de</string>
+    <string name="_28_c">28°C</string>
+    <string name="editar">Editar</string>
 </resources>

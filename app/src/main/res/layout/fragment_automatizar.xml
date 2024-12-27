@@ -1,10 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".menu.AutomatizarFragment">
 
+    <TextView
+        android:id="@+id/txtAutomatizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/automatizar"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/txtRegar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/regar_cuando_la_humedad_sea_menor_a"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutomatizar" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/txtHumedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_50"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegar1" />
+
+    <TextView
+        android:id="@+id/txtRegar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/regar_cuando_la_temperatura_caiga_por_debajo_de"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHumedad" />
+
+    <TextView
+        android:id="@+id/txtTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_28_c"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegar2" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar"
+        android:textSize="22sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_border"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
