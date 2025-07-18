@@ -17,4 +17,6 @@
     <string name="regar_cuando_la_temperatura_caiga_por_debajo_de">Regar cuando la temperatura caiga por debajo de</string>
     <string name="_28_c">28°C</string>
     <string name="editar">Editar</string>
+    <string name="floreiot">FloreIoT</string>
+    <string name="background">background</string>
 </resources>
