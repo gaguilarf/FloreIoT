@@ -68,10 +68,6 @@ FloreIoT nace para facilitar la gestión eficiente del riego en entornos agríco
 
 ¡Las contribuciones son bienvenidas! Abre un issue o pull request para sugerencias, mejoras o correcciones.
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
 ---
 
 Desarrollado por el equipo de FloreIoT.
