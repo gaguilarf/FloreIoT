@@ -42,28 +42,22 @@ class HumedadFragment : Fragment() {
         // Escuchar los datos de Firebase
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val entries = mutableListOf<Entry>()
-
-                // Itera sobre los datos en Firebase y extrae los valores
-                var i = 0f  // Contador para el eje X
+                val sensorDataList = mutableListOf<SensorData>()
                 for (sensorSnapshot in snapshot.children) {
                     val sensorData = sensorSnapshot.getValue(SensorData::class.java)
-
                     if (sensorData != null) {
-                        entries.add(Entry(i++, sensorData.humedad))
-
-                        Log.d("FirebaseData", "Temperatura: ${sensorData.humedad}, Fecha: ${sensorData.fecha}")
+                        sensorDataList.add(sensorData)
                     } else {
                         Log.d("FirebaseData", "SensorData es nulo para un nodo")
                     }
                 }
-
-                // Verificar si se han agregado entradas
-                if (entries.isNotEmpty()) {
-                    // Registrar detalles del primer dato como ejemplo
-                    Log.d("FirebaseData", "Primer Entry: X=${entries[0].x}, Y=${entries[0].y}")
-                } else {
-                    Log.d("FirebaseData", "No se obtuvieron datos de Firebase.")
+                // Ordenar por fecha ascendente (más antigua a más actual)
+                val sortedList = sensorDataList.sortedBy { it.fecha }
+                val entries = mutableListOf<Entry>()
+                var i = 0f
+                for (sensorData in sortedList) {
+                    entries.add(Entry(i++, sensorData.humedad))
+                    Log.d("FirebaseData", "Humedad: ${sensorData.humedad}, Fecha: ${sensorData.fecha}")
                 }
 
                 // Crear un LineDataSet y establecer los valores del gráfico

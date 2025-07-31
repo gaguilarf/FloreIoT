@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SarisEco" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimaryVariant">#8420FF</item>
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/principal</item>
+        <item name="colorPrimary">@color/principal</item>
     </style>
 
     <style name="Theme.SarisEco" parent="Base.Theme.SarisEco" />
