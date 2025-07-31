@@ -31,7 +31,7 @@ class HumedadFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_humedad, container, false)
 
         lineChart = rootView.findViewById(R.id.lineChart)
-        database = FirebaseDatabase.getInstance().reference.child("sensores/Datos")
+        database = FirebaseDatabase.getInstance().reference.child("sensores/Historico")
 
         getSensorData()
 
