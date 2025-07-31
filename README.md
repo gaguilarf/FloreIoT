@@ -17,7 +17,6 @@ FloreIoT centraliza la información de temperatura y humedad, permite la gestió
 4. [📱 Vistazo a la App](#-vistazo-a-la-app)
 5. [🚀 Puesta en Marcha (Instalación)](#-puesta-en-marcha-instalación)
 6. [🤝 Contribuciones](#-contribuciones)
-7. [📄 Licencia](#-licencia)
 
 ## 🎯 Visión del Proyecto
 
