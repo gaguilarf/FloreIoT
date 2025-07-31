@@ -20,6 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "sarisEco"
+rootProject.name = "FloreIoT"
 include(":app")
- 
